@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beanCalculator.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Bean Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a href="#" class="active">BEAN COUNT .</a>
+            <a href="/client/index.html">Login | Registration</a>
+            <a href="/client/beanCalculator.html">Caffeine Calculator</a>
+          </nav>
+    </header>
+    <main class="bean-form">
+        <form method="POST" action="client/beanCalculator.php" class="form" id="form_id">
+            <label for="date" class="label">Enter Date / Time:</label><br/>
+            <input type="text" name="date" id="date" class="label-input" placeholder="YYYY-MM-DD 00:00:00"><br/>
+            <label for="size" class="label">Serving Size:</label><br/>
+            <input type="number" name="size" id="size" class="size" placeholder="8.oz, 12.oz, 16.oz, 20.oz">
+            <br/><br/>
+            <label for="espresso" class="label">Espresso-Shots:</label><br/>
+            <input type="number" name="espresso" id="espresso" class="espresso" placeholder="How many Espresso-shots...">
+            <br/><br/>
+            <label for="daily" class="label">Daily Serving:</label><br/>
+            <input type="number" name="daily" id="daily" class="daily" placeholder="How many cups?...">
+            <br/><br/>
+            <button type="button" class="reset-btn" id="reset_btn" onClick="formField()">Reset Bean's</button>
+            <input type="button" onClick="beanCalculate()" class="btn" id="btn" value="Submit Bean's">
+        </form>
+    </main>
+    <div class="table-results">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="th" id="label-index">INDEX</th>
+                    <th class="th" id="label-date">Date / Time</th>
+                    <th class="th" id="label-username">Username:</th>
+                    <th class="th" id="label-cup-size">Cup Size:</th>
+                    <th class="th" id="label-espresso">Espresso Shots:</th>
+                    <th class="th" id="label-total-count">Total Cups:</th>
+                    <th class="th" id="label-total-caffeine">Daily Caffeine</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td td-index" id="id_index" placeholder=" INDEX: ">set value</td>
+                    <td class="td td-date" id="date_result" placeholder="YYYY-MM-DD 00:00:00">set value</td>
+                    <td class="td td-user" id="username_result" placeholder="username...">set value</td>
+                    <td class="td td-cup" id="bean_math_cupSize" placeholder="size-cup...">set value</td>
+                    <td class="td td-espresso" id="espresso_result" placeholder="espresso shots...">set value</td>
+                    <td class="td td-total" id="bean_math_total" placeholder="total-cups...">set value</td>
+                    <td class="td td-mg" id="total_mg" placeholder="caffeine mg drank...">set value</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="beancalculator.js"></script>
+</body>
+</html>
+
+
+
+
+
+

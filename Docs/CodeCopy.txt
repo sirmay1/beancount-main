@@ -1,0 +1,299 @@
+Link for background image: (11/11/2023)
+<img src="/images/CoffeeDisplay1.jpeg" alt="Background Coffee Image for main page layout" srcset="">
+Path:
+"C:\Users\Willi\OneDrive\Desktop\BeanCount"
+
+Hyperlink for CSS and background images:
+https://www.freecodecamp.org/news/css-full-page-background-image-tutorial/
+
+                <label for="use">New User Name</label><br/>
+                <input type="text" name="newUser" id="newUser" class="newUser"><br/>
+                <label for="first_name">First Name</label><br/>
+                <input type="text" name="first_name" id="first_name" class="first_name"><br/>
+                <label for="last_name">Last Name</label><br/>
+                <input type="text" name="last_name" id="last_name" class="last_name"><br/>
+                <button type="submit" id="button" class="button"><?php echo"submit-form";?></button>
+
+
+<main>
+        <br><br>
+        <h1 class="h1" id="h1">
+            <?php
+            echo"I LIKE JAVASCRIPT";
+            ?>
+        </h1>
+        <br><br>
+        <button id="btn" class="btn exec">
+            <?php
+            echo"Change State";
+            ?>
+        </button>
+        <ul>
+            <?php if(true) {?>
+                <br/>
+                <li class="link">
+                    <a href='javascript' class='link'>I Love <?php
+                    $name = "PHP";
+                    echo $name;
+                    ?>
+                    </p>
+                </li>
+            <?php } ?>
+            <?php if(true) {?>
+                <br/>
+                <li class="link">
+                    <a href='php' class='link'>I Love <?php 
+                    $name = "JavaScript";
+                    echo $name;
+                    ?></p>
+                </li>    
+            <?php } ?>
+            </ul>
+            <br/>
+            <h3 style='
+            text-align: center;
+            color: green;
+            text-decoration: underline 1px solid crimson;
+            background-color: whitesmoke;
+            font-family: Georgia;
+            font-size: 1.2rem;
+            '>
+                <?php {
+                echo "<br/><br/>";
+                echo $_SERVER["DOCUMENT_ROOT"];
+                echo "<br/><br/>";
+                echo $_SERVER["PHP_SELF"];
+                echo "<br/><br/>";
+                echo $_SERVER["SERVER_NAME"];
+                echo "<br/><br/>";
+                echo $_SERVER["REQUEST_METHOD"];
+                echo "<br/><br/>";
+                $_SESSION["username"] = "BillDev07";
+                echo $_SESSION["username"];
+                echo "<br/><br/>";
+                 }?>
+            </h3>
+    </main>
+
+
+
+
+    Junk-Code
+
+
+
+<input = "username, size, daily, date"; => (btn)
+*/
+/*step:1# user enters info into field(s) 
+ *step:2# enter date from the field to submit
+  step:3# cup-size = {size1: '8.oz', size2: '12.oz', size3: '16.oz', size4: '20.oz'}; 
+  step:4#  size * total-cups = daily serving
+  OUTPUT: username_result, bean_math_cupSize, bean_math_total;
+
+DOM Elements To Consider:
+     HTMLInputElement, getElementsByTagName, getElementById, childNodes, appendChild, removeChild, getAttribute 
+  */
+
+/*<form>
+1st Number : <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+</form>
+<p>The Result is : <br>
+<span id = "result"></span>
+</p>
+
+function multiplyBy()
+{
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function divideBy() 
+{ 
+    num1 = document.getElementById("firstNumber").value;
+    num2 = document.getElementById("secondNumber").value;
+    document.getElementById("result").innerHTML = num1 / num2;
+}
+
+https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement/select
+
+<input type="text" id="text-box" size="20" value="Hello world!" />
+<button onclick="selectText()">Select text</button>
+
+function selectText() {
+  const input = document.getElementById("text-box");
+  input.focus();
+  input.select();
+}
+*/
+
+Solving Issue Of Page Poping an alert when you refresh the page... (beanCalculator.php) (11/29/2023)
+site: https://stackoverflow.com/questions/36465057/prevent-settimeout-function-on-page-reload
+OPTION: 1#
+window.onload = function() {
+  
+  
+  if (!document.cookie){
+        setTimeout(function(){
+            $('#myModal').modal('show');
+            }, 10000);
+        document.cookie = "cookie=yes; path=/";
+    }
+
+OPTION: 2#
+/ load flag from localStorage
+var alreadyDisplayed = localStorage.getItem('alreadyDisplayed');
+
+// if not found or found but 'false' - display modal (alert in this case)
+if (!alreadyDisplayed || alreadyDisplayed == 'false') {
+
+  setTimeout(function() {
+    alert('show');
+    // store to localStorage the fact that we displayed the modal
+    localStorage.setItem('alreadyDisplayed', 'true');
+    
+  }, 5 * 1000); // in ms, so 5*1000 = 5 secs
+}
+  
+}
+
+
+
+App.php
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="App.css">
+    <title>Bean Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a class="active" href="https://localhost/beancount/client/index.php">Bean Math</a>
+            <a href="https://localhost/beancount/client/App.php">Bean Login Form</a>
+            <a href="https://localhost/beancount/client/AppFormHandle.php">Bean Outcome</a>
+            <a href="https://localhost/beancount/client/beanCalculator.php">Bean Calculator</a>
+          </nav> 
+    </header> 
+    <br/><br/><br/><br/>
+        <h1 id="header">
+            <?php
+                echo"Are You Logged In?";
+            ?>
+        </h1>
+        <br/><br/><br/><br/>
+        <main class="form-container">
+            <form class="form" id="form" method="POST" action="AppFormHandle.php">
+                <?php
+                    $servername = "localhost";
+                    $username = "billdev07";
+                    $password = "Guildwars1";
+                    $dbname = "MySQL";
+
+                    $conn = new mysqli(
+                        $servername, $username, $password, $dbname
+                    );
+
+                    if ($conn->connect_error) {
+                        die("connection failed..."
+                        . $conn->connect_error);
+                    }
+
+                    $sqlquery = "INSERT INTO table VALUES
+                    ('William', 'Castro', 'william.castro2000@gmail.com')";
+
+                    if ($conn->query($sql) === TRUE) {
+                        echo "record inserted successfully!";
+                    }
+                    else {
+                        echo "ERROR: " . $sql . "<br/>" . $conn->error;
+                    }
+                ?>
+            </form>
+        </main>
+    <script src="App.js"></script>
+</body>
+</html>
+
+beanCalculator.php (FILE)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beanCalculator.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Bean Calculator</title>
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <a class="active" href="https://localhost/beancount/client/index.php">Bean Math</a>
+            <a href="https://localhost/beancount/client/App.php">Bean Login Form</a>
+            <a href="https://localhost/beancount/client/AppFormHandle.php">Bean Outcome</a>
+            <a href="https://localhost/beancount/client/beanCalculator.php">Bean Calculator</a>
+          </nav> 
+    </header> 
+    <main class="bean-form">
+        <form method="POST" action="client/beanCalculator.php" class="form" id="form_id">
+            <label for="date">Enter Date: YYYY-MM-DD</label><br/>
+            <input type="text" name="date" id="date" class="label-input" placeholder="YYYY-MM-DD"><br/>
+            <label for="size">Enter Serving Size:</label><br/>
+            <input type="number" name="size" id="size" class="size" placeholder="6.oz, 8.oz, 12.oz, etc..">
+            <br/><br/>
+            <label for="daily">Total Cup Count:</label><br/>
+            <input type="number" name="daily" id="daily" class="daily" placeholder="How many cups?...">
+            <br/><br/>
+            <button type="button" class="reset-btn" id="reset_btn" onClick="formField()">
+                <?php echo"reset-values"?>
+            </button>
+            <input type="button" onClick="beanCalculate()" class="btn" id="btn" value="submit-values">
+        </form>
+    </main>
+    <div class="table-results">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="th" id="label-index"><?php echo"INDEX"?></th>
+                    <th class="th" id="label-date"><?php echo"YYYY-MM-DD";?></th>
+                    <th class="th" id="label-username"><?php echo"Username:";?></th>
+                    <th class="th" id="label-cup-size"><?php echo"Cup size: (mg)";?></th>
+                    <th class="th" id="label-total-count"><?php echo"Total Cups:"?></th>
+                    <th class="th" id="label-total-caffeine"><?php echo"Caffeine: (mgs)";?></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td td-index" id="id_index" placeholder=" INDEX: ">set value</td>
+                    <td class="td td-date" id="date_result" placeholder="YYYY-MM-DD">set value</td>
+                    <td class="td td-user" id="username_result" placeholder="username...">set value</td>
+                    <td class="td td-cup" id="bean_math_cupSize" placeholder="size-cup...">set value</td>
+                    <td class="td td-total" id="bean_math_total" placeholder="total-cups...">set value</td>
+                    <td class="td td-mg" id="total_mg" placeholder="caffeine mg drank...">set value</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="beancalculator.js"></script>
+</body>
+</html>
+
+/*Database Form Table*/
+
+CREATE TABLE newusers(
+	id INTEGER(15) NOT NULL AUTO_INCREMENT,
+    username VARCHAR(30) NOT NULL,
+    pwd VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    date_posted DATETIME NOT NULL,
+    PRIMARY KEY(id)
+);
