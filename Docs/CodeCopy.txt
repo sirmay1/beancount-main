@@ -15,6 +15,138 @@ https://www.freecodecamp.org/news/css-full-page-background-image-tutorial/
                 <button type="submit" id="button" class="button"><?php echo"submit-form";?></button>
 
 
+
+
+ //const _espresso = [75, 150, 225, 300, 375, 450, 525, 600, 675, 750]; //espresso, 8 shot max.
+
+ //const _cupSize = [75, 150, 225, 300]; //cup size, small, tall, grande, venti
+    //const _sizes = [8, 12, 16, 20]; //sizes per numeric value
+
+   /*const _cupSize = {
+    cup: [8, 12, 16, 20],
+    mgs: [75, 150, 225, 300, 375, 450, 525, 600, 675, 750],
+   };*/
+
+   /*const _cupSize = {
+    cup: {
+        8: '75mgs of Caffeine',
+        12: '150mgs of Caffeine',
+        16: '225mgs of Caffeine',
+        20: '300mgs of Caffeine',
+    },
+   };*/
+
+
+
+/*  function updateHyperlinkIndexes() {
+    var table = document.getElementById('id_index tbody');
+    for (var i = 1; i < table.children.length; i++) {
+        var trContent = table.children[i];
+        for (var i = 0; i  trContent.children.length; i++) {
+            if (tryContent.children.item(i).type && trContent.children.item(i). type === "hidden")  {
+                var cellName = trContent.children.item(i).name;
+                trContent.children.item(i).name = cellName.replace(/[.*]/, i);
+            }
+        }
+    }
+    return table;
+};
+var updatedHtml = updateHyperlinkIndexes();*/
+
+
+    /*if (espresso == 1) {
+        document.getElementById('espresso_results').textContent = `${_espresso[1]}.mg`;
+    } else if (espresso == 2) {
+        document.getElementById('espresso_results').textContent = `${_espresso[2]}.mg`;
+    } else if (espresso == 3) {
+        document.getElementById('espresso_results').textContent = `${_espresso[3]}.mg`;
+    } else if (espresso == 4) {
+        document.getElementById('espresso_results').textContent = `${_espresso[4]}.mg`;
+    } else if (espresso == 5) {
+        document.getElementById('espresso_results').textContent = `${_espresso[5]}.mg`;
+    } else if (espresso == 6) {
+        document.getElementById('espresso_results').textContent = `${_espresso[6]}.mg`;
+    } else if (espresso == 7) {
+        document.getElementById('espresso_results').textContent = `${_espresso[7]}.mg`;
+    } else if (espresso == 8) {
+        document.getElementById('espresso_results').textContent = `${_espresso[8]}.mg`;
+    } else if (espresso == 9) {
+        document.getElementById('espresso_results').textContent = `${_espresso[9]}.mg`;
+    } else if (espresso == 10) {
+        document.getElementById('espresso_results').textContent = `${_espresso[1]}.mg`;
+    } else {
+        document.getElementById('espresso_results').textContent = espresso * 75;// espresso(user numeric value entered) * 75
+    }*/
+
+
+/*    switch (_espresso[espresso.length]) {
+        case _espresso[0]:
+            document.getElementById('espresso_results').textContent = _espresso[0];
+            break;
+        case _espresso[1]:
+            document.getElementById('espresso_results').textContent = _espresso[2];
+            break;
+        case _espresso[2]:
+            document.getElementById('espresso_results').textContent = _espresso[3];
+            break;
+        case _espresso[3]:
+            document.getElementById('espresso_results').textContent = _espresso[4];
+            break;
+        case _espresso[4]:
+            document.getElementById('espresso_results').textContent = _espresso[5];
+            break;
+        case _espresso[5]:
+            document.getElementById('espresso_results').textContent = _espresso[6];
+            break;
+        case _espresso[6]:
+            document.getElementById('espresso_results').textContent = _espresso[7];
+            break;
+        case _espresso[7]:
+            document.getElementById('espresso_results').textContent = _espresso[8];
+            break;
+        default:
+            document.getElementById('espresso_results').textContent = "set-value";
+    }*/
+
+/*<table>
+    id = "bean_math_cupSize"; (size)
+    id = "espresso_result"; (espresso)
+    id = "total_mg"; (total mgs)
+</table>
+<form>
+    id = "size"; (size)
+    id = "espresso"; (espresso)
+    id = "daily"; (total)
+</form>*/
+
+/*HTMLInputElement */
+
+
+//date_result, size, username, daily, total_mg, bean_match_cupSize
+/*document.body.append(addDate);
+document.body.append(date_result);
+document.body.append(username);
+document.body.append(daily);
+document.body.append(size);
+document.body.append(total_mg);
+document.body.append(bean_match_cupSize);*/
+
+/*  else {
+        document.getElementById("date_result").innerHTML = "set value";
+        document.getElementById("username_result").innerHTML = "set value";
+        document.getElementById("bean_math_cupSize").innerHTML = "set value";
+        document.getElementById("bean_math_total").innerHTML = "set value";
+        document.getElementById("total_mg").innerHTML = "set value";
+    }*/
+
+
+    /*setTimeout( () = {
+        alert("Please enter the correct value to continue, thank-you!");
+        localStorage.setItem('alreadyDisplayed', 'true');
+       }, 1000);
+       document.cookie = "cookie=yes; path=/";*/
+
+
 <main>
         <br><br>
         <h1 class="h1" id="h1">
@@ -42,11 +174,11 @@ https://www.freecodecamp.org/news/css-full-page-background-image-tutorial/
             <?php if(true) {?>
                 <br/>
                 <li class="link">
-                    <a href='php' class='link'>I Love <?php 
+                    <a href='php' class='link'>I Love <?php
                     $name = "JavaScript";
                     echo $name;
                     ?></p>
-                </li>    
+                </li>
             <?php } ?>
             </ul>
             <br/>
@@ -84,14 +216,14 @@ https://www.freecodecamp.org/news/css-full-page-background-image-tutorial/
 
 <input = "username, size, daily, date"; => (btn)
 */
-/*step:1# user enters info into field(s) 
+/*step:1# user enters info into field(s)
  *step:2# enter date from the field to submit
-  step:3# cup-size = {size1: '8.oz', size2: '12.oz', size3: '16.oz', size4: '20.oz'}; 
+  step:3# cup-size = {size1: '8.oz', size2: '12.oz', size3: '16.oz', size4: '20.oz'};
   step:4#  size * total-cups = daily serving
   OUTPUT: username_result, bean_math_cupSize, bean_math_total;
 
 DOM Elements To Consider:
-     HTMLInputElement, getElementsByTagName, getElementById, childNodes, appendChild, removeChild, getAttribute 
+     HTMLInputElement, getElementsByTagName, getElementById, childNodes, appendChild, removeChild, getAttribute
   */
 
 /*<form>
@@ -111,8 +243,8 @@ function multiplyBy()
     document.getElementById("result").innerHTML = num1 * num2;
 }
 
-function divideBy() 
-{ 
+function divideBy()
+{
     num1 = document.getElementById("firstNumber").value;
     num2 = document.getElementById("secondNumber").value;
     document.getElementById("result").innerHTML = num1 / num2;
@@ -134,8 +266,8 @@ Solving Issue Of Page Poping an alert when you refresh the page... (beanCalculat
 site: https://stackoverflow.com/questions/36465057/prevent-settimeout-function-on-page-reload
 OPTION: 1#
 window.onload = function() {
-  
-  
+
+
   if (!document.cookie){
         setTimeout(function(){
             $('#myModal').modal('show');
@@ -154,10 +286,10 @@ if (!alreadyDisplayed || alreadyDisplayed == 'false') {
     alert('show');
     // store to localStorage the fact that we displayed the modal
     localStorage.setItem('alreadyDisplayed', 'true');
-    
+
   }, 5 * 1000); // in ms, so 5*1000 = 5 secs
 }
-  
+
 }
 
 
@@ -180,8 +312,8 @@ App.php
             <a href="https://localhost/beancount/client/App.php">Bean Login Form</a>
             <a href="https://localhost/beancount/client/AppFormHandle.php">Bean Outcome</a>
             <a href="https://localhost/beancount/client/beanCalculator.php">Bean Calculator</a>
-          </nav> 
-    </header> 
+          </nav>
+    </header>
     <br/><br/><br/><br/>
         <h1 id="header">
             <?php
@@ -240,8 +372,8 @@ beanCalculator.php (FILE)
             <a href="https://localhost/beancount/client/App.php">Bean Login Form</a>
             <a href="https://localhost/beancount/client/AppFormHandle.php">Bean Outcome</a>
             <a href="https://localhost/beancount/client/beanCalculator.php">Bean Calculator</a>
-          </nav> 
-    </header> 
+          </nav>
+    </header>
     <main class="bean-form">
         <form method="POST" action="client/beanCalculator.php" class="form" id="form_id">
             <label for="date">Enter Date: YYYY-MM-DD</label><br/>

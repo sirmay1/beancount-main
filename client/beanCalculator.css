@@ -117,7 +117,7 @@ input[type=text], select, textarea {
     margin-top: 5%;
 }
 .form {
-    margin-left: 5%;
+    margin-left: 2.5%;
 }
 .label-input {
     font-size: 0.8rem;
@@ -186,6 +186,11 @@ table, td, th {
 #label-date {
     width: 220px;
 }
+
+
+
+
+
 
 
 

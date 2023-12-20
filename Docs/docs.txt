@@ -55,7 +55,8 @@ Espresso: 1-shot = 75mgs
 CUP-SIZE || ESPRESSO-SHOTS(standard -- versus -- extra shots) || TOTAL-CUPS(SERVING) || TOTAL-CAFFEINE
 Short -- 1 (shot) -- ??? -- ???
 Tall -- 2 (shot) -- ??? -- ???
-
+grande
+venti
 
 CODE FOR PUSHING TO GITHUB:
 
