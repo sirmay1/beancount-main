@@ -16,11 +16,11 @@
           </nav>
     </header>
     <main class="bean-form">
-        <form method="POST" action="client/beanCalculator.php" class="form" id="form_id">
+        <form method="POST" action="client/beanCalculator.php" class="form" id="myForm">
             <label for="date" class="label">Enter Date / Time:</label><br/>
             <input type="text" name="date" id="date" class="label-input" data-time="update" placeholder="YYYY-MM-DD 00:00:00"><br/>
             <label for="size" class="label">Serving Size:</label><br/>
-            <input type="number" name="size" id="size" class="size" data-name="size" placeholder="8.oz, 12.oz, 16.oz, 20.oz">
+            <input type="number" name="size" id="myInput" class="size" data-name="size" placeholder="8.oz, 12.oz, 16.oz, 20.oz">
             <br/><br/>
             <label for="espresso" class="label">Espresso-Shots:</label><br/>
             <input type="number" name="espresso" id="espresso" class="espresso" placeholder="How many Espresso-shots...">
@@ -33,13 +33,13 @@
         </form>
     </main>
     <div class="table-results">
-        <table class="table">
+        <table class="table" id="myTable">
             <thead>
                 <tr>
                     <th class="th" id="label-index">ID:</th>
                     <th class="th" id="label-date">Date / Time</th>
                     <th class="th" id="label-username">Username:</th>
-                    <th class="th" id="label-cup-size">Cup Size mgs:</th>
+                    <th class="th" id="label-cup-size">Serving Size mgs:</th>
                     <th class="th" id="label-espresso">Espresso Shots mgs:</th>
                     <th class="th" id="label-total-count">Total Cups:</th>
                     <th class="th" id="label-total-caffeine">Daily Caffeine:</th>
@@ -50,7 +50,7 @@
                     <td class="td td-index" id="id_index">INDEX</td>
                     <td class="td td-date" id="date_result" data-time="newUpdate">YYYY-MM-DD 00:00:00</td>
                     <td class="td td-user" id="username_result">------</td>
-                    <td class="td td-cup" id="add_cupSize">.oz</td>
+                    <td class="td td-cup" id="add_cupSize">serving size</td>
                     <td class="td td-espresso" id="espresso_results">0</td>
                     <td class="td td-total" id="total_cups">0</td>
                     <td class="td td-mg" id="total_mg">0</td>
@@ -62,6 +62,7 @@
     <script src="beancalculator.js"></script>
 </body>
 </html>
+
 
 
 

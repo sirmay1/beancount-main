@@ -15,6 +15,22 @@ Database issues:
 https://playgroundai.com/post/ultra-realistic-photo-of-night-the-super-large-coffee-shop--clmabl7g3077as6014rcipwie
 NOTE: image isn't under any copy right laws.
 
+NOTE: Thinking about using Maps for cupSize for the if else statement or I may re-write as a switch statement
+December 20th, 2023...
+
+const cupSize = new Map([
+  [8, {mgs: 75} ],
+  [12, {mgs: 150} ],
+  [16, {mgs: 225} ],
+  [20, {mgs: 300} ],
+]);
+
+console.log(cupSize);
+
+NOTE: Second solution, use .concat() to combine elements from 2 separate arrays.
+December 20th, 2023...
+
+
 
 
 /*STARBUCKS COFFEE:  Cup-size: "8, 12, 16, 20"; Total-cups: "1, 2, 3, 4, 5, 6";
