@@ -130,6 +130,13 @@ input[type=text], select, textarea {
   color: #FFF;
   font-size: 1rem;
 }
+.username {
+  font-size: 0.8rem;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
 .size {
     font-size: 0.8rem;
     padding: 10px;

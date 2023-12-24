@@ -3,6 +3,7 @@ function beanCalculate() {
     const resetForm = document.getElementById('form_id');
     resetForm.reset();
    };
+    const username = document.getElementById('username').value;
     const addDate = document.getElementById('date').value;
     const espresso = document.getElementById('espresso').value;
     const total = document.getElementById('daily').value;
@@ -11,18 +12,16 @@ function beanCalculate() {
     //const _sizes = [8, 12, 16, 20];    sizes.slice(0, 1)    `${askSize}.oz 75mgs`;
 
     if (size  == 8 || total >= 1 || espresso >= 1) {
-        //const askSize = prompt("Enter your cup size? We have 8.oz, 12.oz, 16.oz & 20.oz...");
-        const askUser = prompt("Please enter your name");
         document.getElementById('id_index').textContent = `01:`;
         document.getElementById("date_result").textContent = `DATE: ${addDate}`;
-        document.getElementById("username_result").textContent = `Welcome, ${askUser}!`;
+        document.getElementById("username_result").textContent = `Welcome, ${username}!`;
         document.getElementById("total_cups").textContent = "8.oz 75mgs";
         document.getElementById('espresso_results').textContent = `${espresso} shot(s)`;
         document.getElementById("total_mg").textContent = (75 * espresso) + (75 * total);
     } if (size == 12 || total >= 1 || espresso >= 1) {
         document.getElementById('id_index').textContent = `02:`;
         document.getElementById("date_result").textContent = `DATE: ${addDate}`;
-        document.getElementById("username_result").textContent = `Welcome, ${askUser}!`;
+        document.getElementById("username_result").textContent = `Welcome, ${username}!`;
         document.getElementById("add_cupSize").textContent = "12.oz 150mgs";
         document.getElementById("total_cups").textContent = `${total} cup(s)`;
         document.getElementById('espresso_results').textContent = `${espresso} shot(s)`;
@@ -30,7 +29,7 @@ function beanCalculate() {
     } if (size == 16 || total >= 1 || espresso >= 1) {
         document.getElementById('id_index').textContent = `03:`;
         document.getElementById("date_result").textContent = `DATE: ${addDate}`;
-        document.getElementById("username_result").textContent = `Welcome, ${askUser}!`;
+        document.getElementById("username_result").textContent = `Welcome, ${username}!`;
         document.getElementById("add_cupSize").textContent = "16.oz 225mgs";
         document.getElementById("total_cups").textContent = "16.oz 75mgs Caffeine";
         document.getElementById('espresso_results').textContent = `${espresso} shot(s)`;
@@ -38,7 +37,7 @@ function beanCalculate() {
     } if (size == 20 || total >= 1 || espresso >= 1) {
         document.getElementById('id_index').textContent = `04:`;
         document.getElementById("date_result").textContent = `DATE: ${addDate}`;
-        document.getElementById("username_result").textContent = `Welcome, ${askUser}!`;
+        document.getElementById("username_result").textContent = `Welcome, ${username}!`;
         document.getElementById("add_cupSize").textContent = "20.oz 300mgs";
         document.getElementById("total_cups").textContent = `${total} cup(s) `;
         document.getElementById('espresso_results').textContent = `${espresso} shot(s)`;
