@@ -3,6 +3,8 @@ function beanCalculate() {
      const resetForm = document.getElementById('myForm');
      resetForm.reset();
     };
+     const btn = document.getElementById('btn');
+     btn.addEventListener('click', () => beanCalculate);
      const username = document.getElementById('username').value;
      const addDate = document.getElementById('date').value;
      const espresso = document.getElementById('espresso').value;
@@ -13,16 +15,16 @@ function beanCalculate() {
         const askSize = prompt("Please enter cup size: 8, 12, 16, or 20...");
 
         switch (askSize) {
-            case '8':
+            case 'small':
                 document.getElementById("add_cupSize").textContent = "8.oz with 75mgs of Caffeine";
               break;
-            case '12':
+            case 'tall':
                 document.getElementById("add_cupSize").textContent = "8.oz with 75mgs of Caffeine";
               break;
-            case '16':
+            case 'grande':
                 document.getElementById("add_cupSize").textContent = "8.oz with 75mgs of Caffeine";
               break;
-            case '20':
+            case 'venti':
                 document.getElementById("add_cupSize").textContent = "8.oz with 75mgs of Caffeine";
               break;
             default:
@@ -66,6 +68,7 @@ function beanCalculate() {
              alert("Please provide the correct value to continue, thank-you!");
          }, 1000);
      }
+
  };
  beanCalculate();
 
