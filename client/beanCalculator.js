@@ -68,7 +68,6 @@ function beanCalculate() {
              alert("Please provide the correct value to continue, thank-you!");
          }, 1000);
      }
-
  };
  beanCalculate();
 
