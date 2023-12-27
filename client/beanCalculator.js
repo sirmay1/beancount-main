@@ -3,18 +3,23 @@ function beanCalculate() {
     const btn = document.getElementById('btn');
     btn.addEventListener('click', (beanCalculate) => {
         const username = document.getElementById('username').value;
+        const date = document.getElementById('date').value;
         const size = document.getElementById('size').value;
         if (size.toString() == '8') {
             document.getElementById('add_username').textContent = `${username}`;
+            document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 75mgs`;
         } else if (size.toString() == '12') {
             document.getElementById('add_username').textContent = `${username}`;
+            document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 150mgs`;
         } else if (size.toString() == '16') {
             document.getElementById('add_username').textContent = `${username}`;
+            document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 225mgs`;
         } else if (size.toString() == '20') {
             document.getElementById('add_username').textContent = `${username}`;
+            document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 300mgs`;
         } else {
             document.getElementById('add_cupSize').textContent = "error : error";
