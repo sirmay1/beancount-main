@@ -151,7 +151,7 @@ input[type=text], select, textarea {
     border: 1px solid goldenrod;
     border-radius: 5px;
 }
-.daily {
+.total {
     font-size: 0.8rem;
     padding: 10px;
     width: 200px;

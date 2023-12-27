@@ -1,26 +1,45 @@
 function beanCalculate() {
+    formField = () => {
+
+        const resetForm = document.getElementById('resetForm');
+        resetForm.reset();
+       };
 
     const btn = document.getElementById('btn');
     btn.addEventListener('click', (beanCalculate) => {
         const username = document.getElementById('username').value;
         const date = document.getElementById('date').value;
         const size = document.getElementById('size').value;
+        const espresso = document.getElementById('espresso').value;
+        const total = document.getElementById('total').value;
         if (size.toString() == '8') {
             document.getElementById('add_username').textContent = `${username}`;
             document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 75mgs`;
+            document.getElementById('add_espresso').textContent = `${espresso.toString()} shots`;
+            document.getElementById('add_total').textContent = `${total.toString()}`;
+            document.getElementById('mgs').textContent = (75 * total) + (75 * espresso);
         } else if (size.toString() == '12') {
             document.getElementById('add_username').textContent = `${username}`;
             document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 150mgs`;
+            document.getElementById('add_espresso').textContent = `${espresso.toString()} shots`;
+            document.getElementById('add_total').textContent = `${total.toString()}`;
+            document.getElementById('mgs').textContent = (150 * total) + (75 * espresso);
         } else if (size.toString() == '16') {
             document.getElementById('add_username').textContent = `${username}`;
             document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 225mgs`;
+            document.getElementById('add_espresso').textContent = `${espresso.toString()} shots`;
+            document.getElementById('add_total').textContent = `${total.toString()}`;
+            document.getElementById('mgs').textContent = (225 * total) + (75 * espresso);
         } else if (size.toString() == '20') {
             document.getElementById('add_username').textContent = `${username}`;
             document.getElementById('date_result').textContent = `${date}`;
             document.getElementById('add_cupSize').textContent = `${size.toString()}.oz size: 300mgs`;
+            document.getElementById('add_espresso').textContent = `${espresso.toString()} shots`;
+            document.getElementById('add_total').textContent = `${total.toString()}`;
+            document.getElementById('mgs').textContent = (300 * total) + (75 * espresso);
         } else {
             document.getElementById('add_cupSize').textContent = "error : error";
         }
@@ -34,6 +53,11 @@ function beanCalculate() {
  };//end of beanCalculator...
  beanCalculate();
 
+
+
+
+
+/// REMAINING: espresso / total cups / total mgs .... (12/26/2023)
 
 
  /*function beanCalculate() {
