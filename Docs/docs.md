@@ -12,6 +12,7 @@ Database issues:
 3a. Backend Service: https://supabase.com (Leaning in this direction)
 4. This tool is similar to Bootstrap: https://boxicons.com/usage called Boxicons
 5. Wall paper background for both login and calculator page was found at this site: (located from a Google search result)
+6. YouTube: video: How To Make A Website With Login And Register | HTML CSS & JavaScript (Ludiflex)
 https://playgroundai.com/post/ultra-realistic-photo-of-night-the-super-large-coffee-shop--clmabl7g3077as6014rcipwie
 NOTE: image isn't under any copy right laws.
 
