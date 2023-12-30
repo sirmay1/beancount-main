@@ -12,8 +12,8 @@
         <nav class="topnav">
             <a href="#" class="active">BEAN COUNT .</a>
             <a href="/client/index.html">Login | Registration</a>
-            <a href="/client/beanCalculator.html">Caffeine Calculator</a>
-          </nav>
+            <!--<a href="/client/beanCalculator.html">Caffeine Calculator</a>-->
+        </nav>
     </header>
     <main class="bean-form">
         <form method="POST" action="client/beanCalculator.php" class="form" id="myForm">
@@ -39,8 +39,8 @@
         <table class="table" id="myTable">
             <thead>
                 <tr>
-                    <th class="th" id="label-index">ID:</th>
-                    <th class="th" id="label-date">Date / Time</th>
+                    <!--<th class="th" id="label-index">ID:</th>-->
+                    <th class="th" id="label-date">Date</th>
                     <th class="th" id="label-username">Username:</th>
                     <th class="th" id="label-cup-size">Serving Size mgs:</th>
                     <th class="th" id="label-espresso">Espresso Shots mgs:</th>
@@ -50,8 +50,8 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="td td-index" id="id_index">INDEX</td>
-                    <td class="td td-date" id="date_result" data-time="newUpdate">YYYY-MM-DD 00:00:00</td>
+                    <!--<td class="td td-index" id="id_index">INDEX</td>-->
+                    <td class="td td-date" id="date_result" data-time="newUpdate">MM/DD/YYYY</td>
                     <td class="td td-user" id="add_username">------</td>
                     <td class="td td-cup" id="add_cupSize">serving size</td>
                     <td class="td td-espresso" id="add_espresso">0</td>
@@ -65,6 +65,8 @@
     <script src="beancalculator.js"></script>
 </body>
 </html>
+
+
 
 
 

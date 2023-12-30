@@ -57,6 +57,10 @@ function beanCalculate() {
 
 
 
+
+
+
+
 /// REMAINING: espresso / total cups / total mgs .... (12/26/2023)
 
 
