@@ -1,4 +1,5 @@
 //Firebase.Google: Getting started with Firebase for the web Video on YouTube & on the Google Firebase site.
+// https://firebase.google.com/docs/web/setup?authuser=0&hl=en
 
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js'; //'firebase/app';
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js';   //'firebase/auth';
