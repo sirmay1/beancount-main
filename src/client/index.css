@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
 
 * {
-    font-family: 'Poppins', Apple Chancery, Georgia, Helvetica;
+    font-family: 'Poppins', Georgia, Apple Chancery, Helvetica;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 body {
-    background: url("/images/background.jpeg");
+    background: url("/src/images/pics6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -259,6 +259,8 @@ header {
         gap: 0;
     }
 }
+
+
 
 
 

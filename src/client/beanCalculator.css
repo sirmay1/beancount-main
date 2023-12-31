@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background: url("/images/login.png");
+  background: url("/src/images/login.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -199,6 +199,8 @@ table, td, th {
     max-width: 800px;
   }
 }
+
+
 
 
 
