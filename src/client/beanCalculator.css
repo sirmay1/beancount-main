@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("/images/login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 3s ease-in-out;
+}
+  /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+  /* Change the color of links on hover */
+.topnav a:hover {
+  background-image: linear-gradient(22deg, yellow, rgb(196, 151, 91), rgb(232, 130, 57));
+  color: #FFF;
+}
+
+  /* Add a color to the active/current link */
+.topnav a.active {
+  background-image: linear-gradient(80deg, tan, chocolate, rgb(219, 104, 104));
+  color: white;
+}
+.topnav a.active:hover {
+  background-color: rgb(232, 206, 187);
+  color: black;
+}
+.container {
+  border-radius: 5px;
+  background-color: black;
+  color: #FFF;
+  padding: 20px;
+  margin-top: 10%;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 200px;
+}
+/*Below, is bottom button for submitting the form, this is not the navbar*/
+
+.btn {
+  padding: 0.60% 0.868%;
+  background-color: darkgreen;
+  color: white;
+  font-weight: 900;
+  border-radius: 20%;
+  border: 1.44px solid black;
+  cursor: pointer;
+  margin-bottom: 1.5%;
+  font-size: 0.642rem;
+  font-weight: 700;
+  transition: 1s ease-in-out;
+}
+.btn:hover {
+    background-color: rgb(73, 246, 102);;
+    color: green;
+    border: 1.44px  solid green;
+
+    font-size: 0.692rem;
+}
+.reset-btn {
+    margin-right: 1%;
+    padding: 0.60% 0.868%;
+    background-color: chocolate;
+    color: white;
+    font-weight: 900;
+    border-radius: 20%;
+    border: 1.44px solid brown;
+    cursor: pointer;
+    margin-bottom: 1.5%;
+    font-size: 0.642rem;
+    font-weight: 700;
+    transition: 1s ease-in-out;
+}
+.reset-btn:hover {
+    background-color: rgb(225, 191, 105);
+    color: chocolate;
+
+    font-size: 0.692rem;
+}
+.bean-form {
+    margin-left: auto;
+    margin-top: 5%;
+}
+.form {
+    margin-left: 2.5%;
+}
+.label-input {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+.label {
+  color: #FFF;
+  font-size: 1rem;
+}
+.username {
+  font-size: 0.8rem;
+  padding: 10px;
+  width: 200px;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+}
+.size {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+.espresso {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+.total {
+    font-size: 0.8rem;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+.table-results {
+    position: absolute;
+    top: 16%;
+    right: 5%;
+}
+table, td, th {
+  background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    border: 1px double rgba(255, 255, 255, 0.4);
+    color: #FFF;
+
+    text-align: center;
+}
+.th {
+    overflow: hidden;
+    color: #FFF;
+    font-size: 1rem;
+    padding: 2.5px;
+    font-weight: 100;
+}
+.td {
+    font-size: 0.925rem;
+    padding: 2.5px;
+}
+#label-username {
+    width: 300px;
+}
+#label-total-count {
+    width: 100px;
+}
+#label-cup-size {
+    width: 150px;
+}
+#label-date {
+    width: 220px;
+}
+@media only screen and (max-width: 768px) {
+  .table-results {
+    min-width: 400px;
+    max-width: 800px;
+  }
+}
+
+
+
+
+
+
+
+
+
+

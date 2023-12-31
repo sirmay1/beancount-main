@@ -1,0 +1,15 @@
+{
+  "name": "beancount-main",
+  "version": "1.0.0",
+  "description": "This is my first inspirational project. I decided to go ahead and create this project because there isn't a Webapp, mobileApp or Desktop App which solves this problem. The problem is how do you calculate the amount of caffeine a person drinks per serving? This turned out to be a very difficult task due to the fact that depending on the type of coffee you are drinking whether it is Arabian coffee, American, or even Spanish. There is a level of caffeine which exist depending on the type of bean used for the development of coffee. Some are milder to a degree and some are much stronger. So in a sense there is a range in the amount of caffeine a person can drink per serving. So to simplify this process I decided to use the data which is provided on the Starbucks website and use this as a point of reference. At the present moment this project is some what of an MVP and I am my first client. After I re-iterate over and over again on this project until it is refined for my liking afterwards I will try to see if others find this content useful and I will make it more of a public user friend project where others may find this helpful for themselves.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "William Castro",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^10.7.1"
+  }
+}
