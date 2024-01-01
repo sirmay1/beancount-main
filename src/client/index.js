@@ -35,3 +35,9 @@ onAuthStateChanged(auth, user => {
 
 
 
+
+
+//clerks Auth for user login info...
+
+
+
