@@ -46,4 +46,5 @@ const clerk = new Clerk(clerkPublishableKey);
 await clerk.load({
   // Set load options here...
 });
+//function updatePassword: (params: UpdateUserPasswordParams) => Promise<User>;
 
