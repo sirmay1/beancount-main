@@ -39,5 +39,11 @@ onAuthStateChanged(auth, user => {
 
 //clerks Auth for user login info...
 
+import Clerk from '@clerk/clerk-js';
 
+const clerkPublishableKey = pk_test_ZW1pbmVudC1nb2JsaW4tNTQuY2xlcmsuYWNjb3VudHMuZGV2JA;
+const clerk = new Clerk(clerkPublishableKey);
+await clerk.load({
+  // Set load options here...
+});
 
