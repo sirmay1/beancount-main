@@ -47,4 +47,8 @@ await clerk.load({
   // Set load options here...
 });
 //function updatePassword: (params: UpdateUserPasswordParams) => Promise<User>;
-
+// clerks file:
+window.Clerk.mountSignIn(
+    document.getElementById("sign-in")
+  );
+  window.Clerk.openSignIn();
