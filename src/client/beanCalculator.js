@@ -1,10 +1,8 @@
 function beanCalculate() {
     formField = () => {
-
         const resetForm = document.getElementById('resetForm');
         resetForm.reset();
        };
-
     const btn = document.getElementById('btn');
     btn.addEventListener('click', (beanCalculate) => {
         const username = document.getElementById('username').value;
@@ -52,6 +50,7 @@ function beanCalculate() {
 
  };//end of beanCalculator...
  beanCalculate();
+
 
 
 
